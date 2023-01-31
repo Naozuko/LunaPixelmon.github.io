@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Pixelmon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owl.carousel/dist/assets/owl.theme.default.min.css">
+    <script src="zjquery-3.6.3.min.js"></script>
+    <script src="owl.carousel/dist/owl.carousel.min.js"></script>
+    <script defer src="zmain.js"></script>
+</head>
+<body>
+
+    <!---------- Scroll Tracker --------->
+    <div class="header">
+
+        <video autoplay muted loop class="bg-video">
+            <source src="videos/title.mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+
+        
+        <!---------- HEADER SECTION--------->
+
+        <div class="navbar">
+            <div class="logo">LunaPixelmon</div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="map.html">MAP</a></li>
+                    <li><a href="download.html">DOWNLOAD</a></li>
+                    <li><a href="">STORE</a></li>
+                </ul>
+            </div>
+            <div class="ip-addy">
+                <h3>IP : &nbsp Play.LunaPixelmon.net</h3>
+            </div>
+            <div class="popup"><h4>Click to copy</h4></div>
+        </div>
+
+
+        <div class="text-box">
+            <h1>LunaPixelmon</h1>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eius, odit optio facere odio recusandae?</h5>
+        </div>
+
+
+    </div>
+
+
+
+    <!--------- Social Side Bar----------->
+
+    <div class="intro-wrap">
+        <div class="open-intro"> <i class="fa-solid fa-angle-right"> </i></div>
+        <div class="close-intro"> <i class="fa-solid fa-angle-left"> </i></div>
+        <div id="contentWrap">
+            <ul class="social">
+                <li><a href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a></li>
+                <li><a href="#"><span><i class="fa-brands fa-instagram"></i></span></a></li>
+                <li><a href="#"><span><i class="fa-brands fa-twitter"></i></span></a></li>
+                <li><a href="#"><span><i class="fa-brands fa-github"></i></span></a></li>
+                <li><a href="#"><span><i class="fa-brands fa-linkedin-in"></i></span></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!---------- NEWS SECTION--------->
+
+
+    <section class="news">
+        <div class="title">
+            <h1>NEWS</h1>
+        </div>
+
+        <div class="table">
+            <div class="table-content">
+                <br><br><br>
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><img src="images/placeholder.webp"></div>
+                    <div class="item"><img src="images/placeholder.webp"></div>
+                    <div class="item"><img src="images/placeholder.webp"></div>
+                    <div class="item"><img src="images/placeholder.webp"></div>
+                    <div class="item"><img src="images/placeholder.webp"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="post-news">
+            <div class="table-more">
+                <h4><a href=""></a>More...</h4>
+            </div>
+    
+            <div class="news-discord">
+                <button onclick = "discordOpen()">
+                    <h2>Join our discord</h2>
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!---------- Gap SECTION--------->
+    <section class="black-gap"></section>
+
+    <!---------- FEATURES SECTION--------->
+    <div class="features-welcome">
+        <h1>Welcome...</h1>
+        <section class ="hidden">
+            <h2>[To a pixelmon server brought to you by Luna]</h2>
+        </section>        
+    </div>
+    
+
+    <div class="features-lol">
+        <section class ="hidden">
+            <h2>Featuring an Earth based world</h2>
+            <br>
+            <h3></h3>
+            <br><br>
+            <img src="images/EarthMap.png" alt="Earth Map">
+        </section>
+    </div>
+
+    <div class="features-gym">
+        <section class ="hidden">
+            <h2>18 unique gyms</h2>
+            <br><br><br>
+            <!---------- GYM PICTURES SECTION--------->
+            <div class="gym-picture">
+                <img src="images/gym/ice.jpg" alt="current gym" id="current-gym" style="width:1000px; height:500px;">
+            </div>
+
+
+            <br>
+            <!---------- ICON SECTION--------->
+            <div class="grid-container-gym">
+                <div class="bug-icon"><i><input type="image" src="images/types/bug.png" alt="bug" id="bug-button" onclick="pictureChange(this.id)"></i></div>
+                <div class="dark-icon"><i><input type="image" src="images/types/dark.png" alt="dark" id="dark-button" onclick="pictureChange(this.id)"></i></div>
+                <div class="dragon-icon"><i><input type="image" src="images/types/dragon.png" alt="dragon" id="dragon-button" onclick="pictureChange(this.id)"></i></div>
+                <div class="electric-icon"><i><input type="image" src="images/types/electric.png" alt="electric" id="electric-button" onclick="pictureChange(this.id)"></i></div>
+                <div class="fairy-icon"><i><input type="image" src="images/types/fairy.png" alt="fairy" id="fairy-button" onclick="pictureChange(this.id)"></i></div>
+                <div class="fighting-icon"><i><input type="image" src="images/types/fighting.png" alt="fighting" id="fighting-button" onclick="pictureChange(this.id)"></i></div>
+                <div class="fire-icon"><i><input type="image" src="images/types/fire.png" alt="fire" id="fire-button" onclick="pictureChange(this.id)"></i></div>
+                <div class="flying-icon"><i><input type="image" src="images/types/flying.png" alt="flying" id="flying-button" onclick="pictureChange(this.id)"></i></div>
+                <div class="ghost-icon"><i><input type="image" src="images/types/ghost.png" alt="ghost" id="ghost-button" onclick="pictureChange(this.id)"></i></div>
+                <div class="grass-icon"><i><input type="image" src="images/types/grass.png" alt="grass" id="grass-button" onclick="pictureChange(this.id)"></i></div>
+                <div class="ground-icon"><i><input type="image" src="images/types/ground.png" alt="ground" id="ground-button" onclick="pictureChange(this.id)"></i></div>
+                <div class="ice-icon"><i><input type="image" src="images/types/ice.png" alt="ice" id="ice-button" onclick="pictureChange(this.id)"></i></div>
+                <div class="normal-icon"><i><input type="image" src="images/types/normal.png" alt="normal" id="normal-button" onclick="pictureChange(this.id)"></i></div>
+                <div class="poison-icon"><i><input type="image" src="images/types/poison.png" alt="poison" id="poison-button" onclick="pictureChange(this.id)"></i></div>
+                <div class="psychich-icon"><i><input type="image" src="images/types/psychic.png" alt="psychic" id="psychic-button" onclick="pictureChange(this.id)"></i></div>
+                <div class="rock-icon"><i><input type="image" src="images/types/rock.png" alt="rock" id="rock-button" onclick="pictureChange(this.id)"></i></div>
+                <div class="steel-icon"><i><input type="image" src="images/types/steel.png" alt="steel" id="steel-button" onclick="pictureChange(this.id)"></i></div>
+                <div class="water-icon"><i><input type="image" src="images/types/water.png" alt="water" id="water-button" onclick="pictureChange(this.id)"></i></div>
+            </div>
+            <div class="black-spacer"></div>
+
+            <!----------- TOURNAMENT SECTION ------------->
+            <div class="tournament">
+                <h2>Weekly and Seasonal Tournaments</h2>
+
+                <br><br><br>
+
+                <img src="images/placeholder.webp" alt="placeholder" style="width:800px; height:500px;">
+            </div>
+            
+            <div class="black-spacer"></div>
+
+            <!------footer------->
+            <div class="footer">
+
+            </div>
+
+            
+            
+
+        </section>
+
+    </div>
+</body>
+</html>
